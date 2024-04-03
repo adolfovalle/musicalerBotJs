@@ -21,6 +21,7 @@ client.on('interactionCreate', async interaction => {
 
 	if (interaction.commandName === 'song') {
 		await interaction.reply(`${interaction.user} no song compares to ${interaction.options.getString('song_to_compare')}`);
+		console.log("command used!");
 	}
 });
 
@@ -45,10 +46,6 @@ async function main() {
 		console.log(error);		
 	}
 }
-
-client.on('messageCreate', message => {
-	console.log(message.content)
-});
 
 main();
 
