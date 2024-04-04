@@ -2,6 +2,7 @@
 const { Client, Events, Routes, GatewayIntentBits } = require('discord.js');
 const { token, CLIENT_ID, GUILD_ID } = require("./config.json");
 const { REST } = require("@discordjs/rest");
+const keepAlive = require('./server');
 
 const client = new Client({ intents: [ 
 	GatewayIntentBits.GuildMessages,
