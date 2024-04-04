@@ -42,6 +42,7 @@ async function main() {
 		console.log("Started refreshing application (/) commands.");
 		await rest.put(Routes.applicationCommands(CLIENT_ID, GUILD_ID), { body: commands });
 		client.login(token);
+		keepAlive();
 		
 	} catch (error) {
 		console.log(error);		
