@@ -11,4 +11,4 @@ function keepAlive(){
     });
 }
 
-modeule.exports = keepAlive;
+module.exports = keepAlive;
